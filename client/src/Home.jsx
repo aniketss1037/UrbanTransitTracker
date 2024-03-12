@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { Container, Typography, CssBaseline, styled } from '@mui/material';
 
 const MainContainer = styled('div')({
