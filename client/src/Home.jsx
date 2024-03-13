@@ -35,19 +35,24 @@ function Home() {
         </Typography>
         <Container maxWidth="sm">
           <Typography variant="body1" align="center">
-           Your content goes here. Customize this component as needed for your home page.
+          UrbanTransitTracker aims to transform how cities manage transportation networks By promoting the use of eco-friendly transport modes and efficient resource allocation, UrbanTransitTracker empowers cities to achieve climate goals while enhancing urban mobility and residents' quality of life. Embracing UrbanTransitTracker can lead to a greener, more sustainable future, where urban transport drives positive environmental change and fosters resilient, thriving communities.
+
           </Typography>
-          <Button variant="contained" color="primary" component={Link} to="/A" style={{ marginTop: '20px' }}>
-            Go to Page A
+
+          <Typography align='center' style={{ marginTop: '40px' }}>
+            Key features are as follows
+          </Typography>
+          <Button variant="contained" color="primary" component={Link} to="/A" style={{ marginTop: '40px' , marginRight: '135px' }}>
+            Route Optimization
           </Button>
-          <Button variant="contained" color="primary" component={Link} to="/B" style={{ marginTop: '10px' }}>
-            Go to Page B
+          <Button variant="contained" color="primary" component={Link} to="/B" style={{ marginTop: '40px' }}>
+            Vehicle Protocols
           </Button>
-          <Button variant="contained" color="primary" component={Link} to="/C" style={{ marginTop: '10px' }}>
-            Go to Page C
+          <Button variant="contained" color="primary" component={Link} to="/C" style={{ marginTop: '40px' , marginRight: '100px' }}>
+            Schedule Coordination
           </Button>
-          <Button variant="contained" color="primary" component={Link} to="/D" style={{ marginTop: '10px' }}>
-            Go to Page D
+          <Button variant="contained" color="primary" component={Link} to="/D" style={{ marginTop: '40px' }}>
+            Real Time Tracking
           </Button>
         </Container>
       </Paper>

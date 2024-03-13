@@ -1,5 +1,5 @@
 import { Container, Typography, CssBaseline, styled } from '@mui/material';
-import backgroundImage from './components/pixlr-image-generator-d95e41be-8a3d-4546-a40b-68281a5dca59.png'; // Import your image
+import backgroundImage from './components/rtrack.jpeg'; 
 
 const MainContainer = styled('div')({
   display: 'flex',
