@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { TextField, Button, Container, Typography, CssBaseline, styled } from '@mui/material';
+import  { useState } from 'react';
+import { TextField, Button, Typography, CssBaseline, styled } from '@mui/material';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
@@ -12,7 +12,7 @@ const MainContainer = styled('div')({
   alignItems: 'center',
   height: '100vh',
   backgroundImage: `url(${backgroundImage})`, // Use imported image as background
-  backgroundSize: 'cover',
+  backgroundSize: 'cover',    
   backgroundPosition: 'center',
   backgroundColor: '#CDB9F5', // Change the background color of the page
 });
