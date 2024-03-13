@@ -4,12 +4,17 @@ import { Link } from 'react-router-dom';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 
+import backgroundImage from './components/pixlr-image-generator-988d93df-feaf-4339-841c-6c8b51b2c4b3.png'; // Import your image
+
 const MainContainer = styled('div')({
   display: 'flex',
   justifyContent: 'center',
   alignItems: 'center',
   height: '100vh',
-  backgroundColor: '#f0f0f0', // Change the background color of the page
+  backgroundImage: `url(${backgroundImage})`, // Use imported image as background
+  backgroundSize: 'cover',
+  backgroundPosition: 'center',
+  backgroundColor: '#CDB9F5', // Change the background color of the page
 });
 
 const Paper = styled('div')({
@@ -20,8 +25,10 @@ const Paper = styled('div')({
   padding: '16px',
   borderRadius: '4px',
   boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
-  backgroundColor: '#fff', // Change the background color of the login form
+  backgroundColor: 'rgba(255, 255, 255, 0.8)', // Change the background color of the login form with opacity
 });
+
+
 
 const Form = styled('form')({
   width: '100%',
@@ -71,7 +78,7 @@ function Login() {
     <MainContainer>
       <CssBaseline />
       <Paper>
-        <Typography component="h1" variant="h5">
+        <Typography component="h1" variant="h5" color="black">
           Login
         </Typography>
         <Form onSubmit={handleSubmit}>
@@ -102,9 +109,9 @@ function Login() {
           </Button>
         </Form>
         <NoAccount>
-          <Typography variant="body2">Don't have an account?</Typography>
+          <Typography variant="body2" color="black">Don't have an account?</Typography>
           <Link to="/register">
-            <SignUpButton variant="outlined" color="primary" fullWidth>
+            <SignUpButton variant="contained" color="secondary" fullWidth>
               Register
             </SignUpButton>
           </Link>
